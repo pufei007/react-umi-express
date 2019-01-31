@@ -1,0 +1,59 @@
+.siderMain {
+  background-color: #2b2f3d;
+  font-size: .6rem;
+  :global(.ant-layout-sider) {
+    height: 100vh;
+    overflow: auto;
+    box-shadow: 5px 4px 7px 0px rgba(117, 117, 117, 0.45);
+  }
+  .toggle {
+    cursor: pointer;
+    text-align: center;
+    height: 1.6rem;
+    line-height: 1.6rem;;
+    i {
+      color: #ccc;
+    }
+  }
+  .toggle:hover > i {
+    color: #fff;
+  }
+  :global(.ant-menu-item) {
+    margin: 0px !important;
+    font-size: .6rem;
+    color: #ccc;
+    padding-left: 0.9rem !important;
+    padding-right: 0.9rem!important;
+  }
+  :global(.ant-menu-sub){
+    :global(.ant-menu-item){
+      font-size: .6rem;
+      padding-left: 1.5rem !important;
+    padding-right: 0.9rem!important;
+    }
+  }
+  :global(.ant-menu-item:hover) {
+    background-color: #387ee8;
+    // margin:0px!important;
+    color: #fff;
+  }
+  :global(.ant-menu-item-selected) {
+    color: #fff;
+  }
+  :global(.ant-menu-submenu-title) {
+    color: #ccc;
+    margin: 0px !important;
+    padding-left: 0.9rem !important;
+  }
+  :global(.ant-menu-submenu-title:hover) {
+    background-color: #387ee8;
+    // margin:0px!important;
+    color: #fff;
+  }
+  :global(.ant-menu-inline-collapsed) {
+    width: 2.5rem;
+    :global(.ant-menu-submenu-title) {
+      padding: 0 18px !important;
+    }
+  }
+}

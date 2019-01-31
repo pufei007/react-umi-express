@@ -1,0 +1,246 @@
+.Content {
+  overflow: hidden;
+  position: relative;
+}
+.header {
+  height: 2.5rem;
+  background: #131828;
+  padding: 0;
+  color: #fff;
+}
+.logo {
+  float: left;
+  padding-left: 0.7rem;
+  padding-right: 0.5rem;
+}
+.logo img {
+  width: 1.1rem;
+  height: 1.4rem;
+  margin-bottom: 5px;
+}
+.name {
+  font-size: 0.95rem;
+  line-height: 2.5rem;
+  color: #fff;
+  float: left;
+  margin-right: 0.7rem;
+}
+.icons {
+  .message {
+    height: 2.5rem !important;
+    line-height: 2.5rem;
+    font-size: .8rem;
+    width: 1.2rem;
+    float: right;
+    cursor: pointer;
+    padding: 0 0.2rem;
+    color: rgba(204, 204, 204, 1);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .set {
+    height: 2.5rem !important;
+    line-height: 2.5rem;
+    width: 1rem;
+    float: right;
+    font-size: 0.7rem;
+    color: rgba(204, 204, 204, 1);
+    cursor: pointer;
+    padding: 0 .4rem;
+    span{
+      display: block;
+      float: left;
+      width:3rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .message:hover {
+    background-color: #2d3149;
+  }
+  .set:hover {
+    background-color: #2d3149;
+  }
+}
+.orgTree {
+  position: relative;
+  width: 10rem;
+  height: 2.5rem;
+  line-height: 2.3rem;
+  float: left;
+  border-left: 1px solid #2d3149;
+  border-right: 1px solid #2d3149;
+  box-sizing: content-box;
+  :global(.ant-select-selection) {
+    background-color: #131828;
+    border: none;
+    -webkit-transition: all 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  :global(.ant-select) {
+    color: #ccc;
+    font-size: 0.85rem;
+  }
+  :global(.ant-select-selection__rendered) {
+    margin-left: 0.7rem;
+  }
+  :global(.ant-select-open) {
+    :global(.ant-select-selection) {
+      -webkit-box-shadow: 0 0 0 0px rgba(24, 144, 255, 0.2);
+      box-shadow: 0 0 0 0px rgba(24, 144, 255, 0.2);
+    }
+  }
+  :global(.ant-select-focused) {
+    :global(.ant-select-selection) {
+      -webkit-box-shadow: 0 0 0 0px rgba(24, 144, 255, 0.2);
+      box-shadow: 0 0 0 0px rgba(24, 144, 255, 0.2);
+    }
+  }
+  :global(.ant-select-arrow) {
+    color: #ccc;
+    display: none;
+  }
+  :global(.ant-select-arrow:hover) {
+    color: #fff;
+  }
+}
+.orgTree:hover {
+  background-color: #2d3149;
+  :global(.ant-select) {
+    background-color: #2d3149;
+  }
+  :global(.ant-select-selection) {
+    background-color: #2d3149;
+  }
+}
+.projectIcon {
+  margin-right: 0.3rem;
+  height: 2.5rem;
+  color: #ccc;
+  line-height: 2.5rem;
+  float: left;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 20;
+}
+.menu {
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+  background: #131828 !important;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  :global(.ant-menu-item) {
+    height: 2.5rem;
+    margin-top: 0px;
+    a {
+      color: #d2d2d2;
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+  :global(.ant-menu-item-active) {
+    a {
+      color: #fff !important;
+    }
+
+    background-color: #2d3149 !important;
+  }
+  :global(.ant-menu-item-selected) {
+    a {
+      color: #fff;
+    }
+
+    background-color: #2d3149 !important;
+  }
+}
+.person {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  .username {
+    display: inline-block;
+    width: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+  }
+}
+.person li {
+  float: left;
+  line-height: 2.5rem;
+  font-size: 0.7rem;
+  color: #ccc;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.person li a {
+  color: #ccc;
+}
+.person li:hover {
+  background-color: #2d3149;
+  cursor: pointer;
+}
+.personMore {
+  :global(.ant-dropdown) {
+    width: 6rem !important;
+  }
+  width: 6rem;
+  top: -5px;
+  // left: -11px;
+  // left: 7px;
+  background-color: #2d3149;
+  // color:#fff;
+  border-radius: 0px;
+  :global(.ant-dropdown-menu-item) {
+    width: 6rem !important;
+    a {
+      color: #ccc;
+    }
+  }
+  :global(.ant-dropdown-menu-item:hover) {
+    background-color: #387ee8;
+    a {
+      color: #ccc;
+    }
+  }
+  :global(.ant-dropdown-menu-item-divider) {
+    background-color: #ccc;
+  }
+}
+
+.projectDrop {
+  top: 50px !important;
+  background-color: #2d3149 !important;
+  color: #ccc;
+  border-radius: 0px;
+  :global(.ant-select-tree) {
+    color: #ccc;
+    li {
+      :global(.ant-select-tree-node-content-wrapper) {
+        color: #ccc;
+      }
+      :global(.ant-select-tree-node-content-wrapper:hover) {
+        background-color: #387ee8;
+        :global(.ant-select-arrow) {
+          color: #fff;
+        }
+      }
+      :global(.ant-select-tree-node-selected) {
+        background-color: #387ee8 !important;
+      }
+    }
+  }
+  :global(.ant-select-dropdown-search) {
+    :global(.ant-select-search__field) {
+      background-color: #2d3149;
+      border-radius: 0px;
+    }
+  }
+}
